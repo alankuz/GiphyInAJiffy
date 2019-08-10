@@ -16,7 +16,7 @@ var topics = [
 
 ]
 for (i=0; i<topics.length; i++) {
-    $('#buttons').append('<button data-place='+topics[i]+ '>'+ topics[i]+'</button>')
+    $('#buttons').append('<button class= "contentButton" data-place='+topics[i]+ '>'+ topics[i]+'</button>')
 }
 function pauser(i) {
     console.log('click')
@@ -44,8 +44,12 @@ $('#'+i).attr('data-state', 'still')
 // https://api.nytimes.com/svc/search/v2/articlesearch.json
 // Example call https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=yourkey
 // q=obama&facet_fields=source&facet=true&begin_date=20120101&end_date=20121231
+$("#searchSubmit").click(function (){
+    var newEntry =$('input').val()
+    $('#buttons').append('<button class= "contentButton" data-place='+$('input').val()+ '>'+ $('input').val() +'</button>')
+    })
 
-$("button").click(function (){
+$(document).on('click', '.contentButton', function(){
         var country = $(this).attr("data-place");
         var url = "https://api.giphy.com/v1/gifs/search?api_key=0bLXaO5E9THqBOtzSMn61Yk0RFnSYcq1&q=" +
           country + "&limit=25&offset=0&rating=pg&lang=en";
@@ -61,3 +65,4 @@ $.ajax({
     }
 });
 })
+
