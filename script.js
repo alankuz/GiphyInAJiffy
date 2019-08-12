@@ -61,7 +61,7 @@ $.ajax({
         console.log(response);
         console.log(response.data[1].images.fixed_height.url)
         for (i=0; i<25; i++)
-        $('#maindiv').append('<div class="imgcontainer>"<p>Title : ' + response.data[i].title +'</p> <p>Rating:' + response.data[i].rating + '</p> <img src="' + response.data[i].images.fixed_height_still.url + '" data-still="'+ response.data[i].images.fixed_height_still.url+'" data-animate="'+ response.data[i].images.fixed_height.url+'" data-state="still" class="gif" onclick="pauser('+i+');" id="'+i+'"></div>');        
+        $('#maindiv').append('<div class="imgcontainer"><p>' + response.data[i].title +'</p> <p>Rating:' + response.data[i].rating + '</p> <img src="' + response.data[i].images.fixed_height_still.url + '" data-still="'+ response.data[i].images.fixed_height_still.url+'" data-animate="'+ response.data[i].images.fixed_height.url+'" data-state="still" class="gif" onclick="pauser('+i+');" id="'+i+'"></div>');        
     }
 });
 })

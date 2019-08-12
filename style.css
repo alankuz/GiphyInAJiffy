@@ -1,0 +1,43 @@
+#buttons button{
+background-color: rgba(115, 255, 0, 0.473);
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+margin-bottom: 1%;
+}
+
+.column {
+    float: left;
+  }
+  
+  .left {
+    width: 75%;
+  }
+  
+  .right {
+    width: 25%;
+    
+  }
+  .row {
+    display: flex;
+  }
+  .imgcontainer {
+      position: inherit;
+    float:left;
+    margin: 1% 1% 1% 1%;
+    border: 2px solid blue;
+    background-color: rgba(1, 220, 255, 0.1)
+  }
+  .imgcontainer p {
+    border: 2px solid grey;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    height: 22px;
+  }
+  .imgcontainer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+  }
+  

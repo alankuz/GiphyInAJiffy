@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="buttons"></div>
-    <label for="search">Search for a country:</label>
-    <input id="search" type="text"><button id="searchSubmit">Submit</button>
-    <div id="maindiv"></div>
+    <div class="row">
+    <div class="column left">
+    <div id="maindiv"></div></div>
+    <div class="column right">
+            <label for="search">Search for a country:</label>
+            <input id="search" type="text"><button id="searchSubmit">Submit</button></div></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 
