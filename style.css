@@ -1,8 +1,45 @@
-#buttons button{
+body {
+  background-color:rgba(5, 62, 148, 0.425);
+}
+
+#topbar {
+  text-align: center;
+  border: 2px solid grey;
+  margin-bottom: 1%;
+  background-color: rgba(128, 128, 128, 0.589)
+}
+
+#topbar h1 {
+font-family: Impact, Charcoal, sans-serif;
+font-size: 60px;
+font-weight: 100;
+color: rgba(160, 241, 241, 0.767);
+}
+
+label {
+  font-size: 20px;
+}
+
+#buttons button {
 background-color: rgba(115, 255, 0, 0.473);
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: bold;
 margin-bottom: 1%;
+margin-right: 0.5%; 
+font-size: 16px;
+}
+
+#search {
+  background-color: rgba(2, 196, 131, 0.342);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+#searchSubmit {
+  background-color: rgba(115, 255, 0, 0.473);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-left: 0.5%;
 }
 
 .column {
@@ -17,16 +54,19 @@ margin-bottom: 1%;
     width: 25%;
     
   }
+
   .row {
     display: flex;
   }
-  .imgcontainer {
+
+.imgcontainer {
       position: inherit;
     float:left;
     margin: 1% 1% 1% 1%;
     border: 2px solid blue;
     background-color: rgba(1, 220, 255, 0.1)
   }
+
   .imgcontainer p {
     border: 2px solid grey;
     text-align: center;
@@ -34,6 +74,7 @@ margin-bottom: 1%;
     text-transform: uppercase;
     height: 22px;
   }
+
   .imgcontainer img {
     display: block;
     margin-left: auto;
