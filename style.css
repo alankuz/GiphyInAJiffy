@@ -2,6 +2,7 @@ body {
   background-color:rgba(5, 62, 148, 0.425);
 }
 
+/* title and the instructions*/
 #topbar {
   text-align: center;
   border: 2px solid grey;
@@ -9,13 +10,14 @@ body {
   background-color: rgba(128, 128, 128, 0.589)
 }
 
-#topbar h1 {
-font-family: Impact, Charcoal, sans-serif;
-font-size: 60px;
-font-weight: 100;
-color: rgba(160, 241, 241, 0.767);
-}
+  #topbar h1 {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  color: rgba(160, 241, 241, 0.767);
+  }
 
+/* button styling */
 label {
   font-size: 20px;
 }
@@ -42,6 +44,7 @@ font-size: 16px;
   margin-left: 0.5%;
 }
 
+/* Page colomn div setup */
 .column {
     float: left;
   }
@@ -58,7 +61,8 @@ font-size: 16px;
   .row {
     display: flex;
   }
-
+  
+/* Container for .gifs loaded */
 .imgcontainer {
       position: inherit;
     float:left;
